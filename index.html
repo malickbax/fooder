@@ -10,63 +10,91 @@
 </head>
 
 <body>
-    <!-- Main header section  -->
-    <div class="fooder-header">
-        <p>Fooder: Your Palate Advisor</p>
-    </div>
-    
-    <!-- Hamburger section showing about us and contact us links -->
-    <div class="hamburger-menu">
-        <div class="about-us">
-            <p>About Us</p>
-        </div>
 
-        <div class="contact-us">
-            <p>Contact Us</p>
+    <header>
+        <!-- Main header section  -->
+        <div class="fooder-header">
+            <p>Fooder: Your Palate Advisor</p>
         </div>
-    </div>
+        
+        <!-- Hamburger section showing about us and contact us links -->
+        <div class="hamburger-menu">
+            <div class="about-us">
+                <p>About Us</p>
+            </div>
+
+            <div class="contact-us">
+                <p>Contact Us</p>
+            </div>
+        </div>
+    </header>
 
     <!-- Search section including filters other functionalities that help user search -->
-    <div class="search-section">
-        <div class="search-line">
-            <p>Search</p>
-            <p> Search Food</p>
-            <!-- Form to type in search bar begings-->
-                <input type="search-bar">
-            <!-- Form to type in search bar ends-->
+    <section>
+        <div class="search-section">
+            <div class="search-line">
+                <p>Search</p>
+                <p> Search Food</p>
+                <!-- Form to type in search bar begings-->
+                    <input type="search-bar">
+                <!-- Form to type in search bar ends-->
+            </div>
+    
+            <div class="categories">
+                    <p>Categories</p>
+                    <!-- List of cuisine types starts -->
+                    <select name="cuisine-type" id="">
+                        <Option value="African">African</Option>
+                        <Option value="American">American</Option>
+                        <Option value="Asian">Asian</Option>
+                        <Option value="Italian">Italian</Option>
+    
+                    </select> 
+                    <!-- List of cuisine types ends  -->
+            </div>
+    
+            <div class="dietary-preferences">
+                <p>Dietary Preferences</p>
+                <select name="dietary-preferences" id="">
+                    <Option value="Halal">Halal</Option>
+                    <Option value="Kosher">Kosher</Option>
+                    <Option value="Vegan">Vegan</Option>
+                    <Option value="Vegatarian">Vegetarian</Option>
+            </div>
+    
+
+            <!-- CHECK ISSUE: appearance of following buttons -->
+            <div class="price-filter">    
+                <button type="button" id="price">$</button>
+                <button type="price-button">$$</button>    
+                <button type="price-button">$$$</button>    
+            </div>
+            <div class="distance-filter">
+                <p>Distance</p>
+                <button type="price-button">Under 1 mile</button>
+                <button type="price-button">3 miles</button>    
+                <button type="price-button">5 miles</button>    
+            </div>
+            <!-- CHECK ISSUE ENDS: appearance of following buttons -->
+
+    </section>
+        <!-- Search section ends here. Results below -->
+
+        <!-- Search results appear below the search area -->
+    <section>
+        <div class="results">
         </div>
+    </section>
+        <!-- results section ends here  -->
 
-        <div class="categories">
-                <p>Categories</p>
-                <!-- List of cuisine types starts -->
-                <select name="cuisine-type" id="">
-                    <Option value="African">African</Option>
-                    <Option value="American">American</Option>
-                    <Option value="Asian">Asian</Option>
-                    <Option value="Italian">Italian</Option>
+        <!-- Footer section here -->
+    <footer>
 
-                </select> 
-                <!-- List of cuisine types ends  -->
-        </div>
-
-        <div class="dietary-preferences">
-            <p>Dietary Preferences</p>
-            <select name="dietary-preferences" id="">
-                <Option value="Halal">Halal</Option>
-                <Option value="Kosher">Kosher</Option>
-                <Option value="Vegan">Vegan</Option>
-                <Option value="Vegatarian">Vegetarian</Option>
-        </div>
-
-
-    </div>
-
-    <!-- Search results appear below the search area -->
-    <div class="results">
-    </div>
+    </footer>
 
     <!-- Link to JS file and other script files -->
     <script src="/assets/script.js"></script>
+    
 </body>
 
 </html>
