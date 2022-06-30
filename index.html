@@ -16,34 +16,31 @@
 
     <header>
         <!-- Main header section  -->
-        <div class="fooder-header">
-            <p>Fooder: Your Palate Advisor</p>
+        <nav class="navbar-menu is-active is-light ">  
+        <div class="navbar-start">
+            <a href="" class="title">Fooder: Your Palate Advisor</a>
         </div>
         
         <!-- Hamburger section showing about us and contact us links -->
-        <div class="hamburger-menu">
-            <div class="about-us">
-                <p>About Us</p>
-            </div>
-
-            <div class="contact-us">
-                <p>Contact Us</p>
-            </div>
+        <div class="navbar-end is-active">
+            <a href="#" class="navbar-item">About us</a>
+            <a href="#" class="navbar-item">Contact us</a>
         </div>
+        </nav>
     </header>
 
     <!-- Search section including filters other functionalities that help user search -->
-    <section>
-        <div class="search-section">
-            <div class="search-line">
-                <p>Search</p>
-                <p> Search Food</p>
+    <section class="section">
+        <div class="container" id="container1">
+            <div class="level-item" >
+                <h1 id="searchFoods" class="title has-text-left">Search Foods</h1>
                 <!-- Form to type in search bar begings-->
-                    <input type="search-bar">
+                <input id="input1" class="input" type="text" placeholder="Enter Food">
                 <!-- Form to type in search bar ends-->
             </div>
     
-            <div class="categories">
+            <div class="level-item">
+                <div class="container">
                     <p>Categories</p>
                     <!-- List of cuisine types starts -->
                     <select name="cuisine-type" id="">
@@ -72,9 +69,10 @@
                 <button type="price-button">$$</button>    
                 <button type="price-button">$$$</button>    
             </div>
+        </div>
             <div class="distance-filter">
-                <p>Distance</p>
-                <button type="price-button">Under 1 mile</button>
+                <h1 class="title">Distance</h1>
+                <button type="button">Under 1 mile</button>
                 <button type="price-button">3 miles</button>    
                 <button type="price-button">5 miles</button>    
             </div>
