@@ -57,14 +57,154 @@
   margin-right: 5px;
 }
 
+#containerResults1 {
+  position: relative;
+  border: solid black 2px;
+  width: 500px;
+  height: 250px;
+  border-radius: 25px;
+  margin-bottom: 5px;
+  background-color: white;
+}
+#address1 {
+  margin-left: 10px;
+}
+#googleLink1 {
+  margin-left: 10px;
+}
+
+#review1 {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+#containerResults3 {
+  position: relative;
+  border: solid black 2px;
+  width: 500px;
+  height: 250px;
+  border-radius: 25px;
+  margin-bottom: 5px;
+  background-color: white;
+}
+#address3 {
+  margin-left: 10px;
+}
+#googleLink3 {
+  margin-left: 10px;
+}
+
+#review3 {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+#containerResults2 {
+  position: relative;
+  border: solid black 2px;
+  width: 500px;
+  height: 250px;
+  border-radius: 25px;
+  margin-bottom: 5px;
+  background-color: white;
+}
+#address2 {
+  margin-left: 10px;
+}
+#googleLink2 {
+  margin-left: 10px;
+}
+
+#review2 {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.title {
+  padding-top: 10px;
+}
+
+#containerResults4 {
+  position: relative;
+  border: solid black 2px;
+  width: 500px;
+  height: 250px;
+  border-radius: 25px;
+  margin-bottom: 5px;
+  background-color: white;
+}
+#address4 {
+  margin-left: 10px;
+}
+#googleLink4 {
+  margin-left: 10px;
+}
+
+#review4 {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+#containerResults5 {
+  position: relative;
+  border: solid black 2px;
+  width: 500px;
+  height: 250px;
+  border-radius: 25px;
+  background-color: white;
+}
+#address5 {
+  margin-left: 10px;
+}
+#googleLink5 {
+  margin-left: 10px;
+}
+
+#review5 {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+#foodSearchTitle {
+  color: white;
+}
+
 #section1 {
   background-color: #f8b9ef;
   color: white;
   text-shadow: 1px 1px black;
   height: 600px;
+  width: 100%;
+}
+
+#section2 {
+  background-color: cadetblue;
+  width: 100%;
 }
 
 @media only screen and (max-width: 500px) {
+  #section1 {
+    background-color: #f8b9ef;
+    color: white;
+    text-shadow: 1px 1px black;
+    height: 600px;
+    width: 100%;
+  }
+
+  #containerResults1 {
+    width: auto;
+  }
+  #containerResults2 {
+    width: auto;
+  }
+  #containerResults3 {
+    width: auto;
+  }
+  #containerResults4 {
+    width: auto;
+  }
+  #containerResults5 {
+    width: auto;
+  }
+
   #searchFoods {
     margin-left: 5px;
     margin-top: 10px;
@@ -98,6 +238,22 @@
   #searchFoods {
     margin-left: 5px;
     margin-top: 10px;
+  }
+
+  #containerResults1 {
+    width: auto;
+  }
+  #containerResults2 {
+    width: auto;
+  }
+  #containerResults3 {
+    width: auto;
+  }
+  #containerResults4 {
+    width: auto;
+  }
+  #containerResults5 {
+    width: auto;
   }
   #input1 {
     margin-top: 10px;
