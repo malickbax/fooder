@@ -16,13 +16,13 @@
 
     <header>
         <!-- Main header section  -->
-        <nav class="navbar-menu is-active is-light ">  
+        <nav id="nav1" class="navbar has-shadow is-active ">  
         <div class="navbar-start">
-            <a href="" class="title">Fooder: Your Palate Advisor</a>
+            <a id="headerTitle" href="" class="title">Fooder: Your Palate Advisor</a>
         </div>
         
         <!-- Hamburger section showing about us and contact us links -->
-        <div class="navbar-end is-active">
+        <div id="options" class="navbar-end is-active">
             <a href="#" class="navbar-item">About us</a>
             <a href="#" class="navbar-item">Contact us</a>
         </div>
@@ -30,7 +30,7 @@
     </header>
 
     <!-- Search section including filters other functionalities that help user search -->
-    <section class="section">
+    <section class="section" id="section1">
         <div class="container" id="container1">
             <div class="level-item" >
                 <h1 id="searchFoods" class="title has-text-left">Search Foods</h1>
@@ -39,11 +39,11 @@
                 <!-- Form to type in search bar ends-->
             </div>
     
-            <div class="level-item">
-                <div class="container">
-                    <p>Categories</p>
+            <div id="middle" class="level">
+                <div class="level-left">
+                    <p id="categories">Categories</p>
                     <!-- List of cuisine types starts -->
-                    <select name="cuisine-type" id="">
+                    <select name="cuisine-type" id="selectCategories">
                         <Option value="African">African</Option>
                         <Option value="American">American</Option>
                         <Option value="Asian">Asian</Option>
@@ -53,28 +53,37 @@
                     <!-- List of cuisine types ends  -->
             </div>
     
-            <div class="dietary-preferences">
-                <p>Dietary Preferences</p>
-                <select name="dietary-preferences" id="">
+            <div class="level-right">
+                
+                <p id="dietaryPref">Dietary Preferences</p>
+                <select  name="dietary-preferences" id="selectDietary">
                     <Option value="Halal">Halal</Option>
                     <Option value="Kosher">Kosher</Option>
                     <Option value="Vegan">Vegan</Option>
                     <Option value="Vegatarian">Vegetarian</Option>
+                </select> 
+                     
             </div>
     
 
             <!-- CHECK ISSUE: appearance of following buttons -->
-            <div class="price-filter">    
-                <button type="button" id="price">$</button>
-                <button type="price-button">$$</button>    
-                <button type="price-button">$$$</button>    
+            <div class="level-right">    
+                <p id="price">Price</p>
+               <button id="btnPrice1" class="button is-small is-primary is-hovered">$</button>
+               <button id="btnPrice2" class="button is-small is-primary is-hovered ">$$</button>
+               <button  id="btnPrice3"class="button is-small is-primary is-hovered ">$$$</button>
+  
             </div>
+
         </div>
-            <div class="distance-filter">
-                <h1 class="title">Distance</h1>
-                <button type="button">Under 1 mile</button>
-                <button type="price-button">3 miles</button>    
-                <button type="price-button">5 miles</button>    
+            <div id="bottomDistance" class="level">
+                <div id="distanceCon" class="level-item">
+                <p id="distance" >Distance</p>
+                <button id="btnMile1" type="button" class="button is-small is-danger">Under 1 mile</button>
+                <button id="btnMile2" type="price-button" class="button is-small is-danger">3 miles</button>    
+                <button id="btnMile3" type="price-button" class="button is-small is-danger">5 miles</button>
+            </div>
+                </div>    
             </div>
             <!-- CHECK ISSUE ENDS: appearance of following buttons -->
 
