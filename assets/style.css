@@ -69,38 +69,10 @@
     margin-left: 5px;
     margin-top: 10px;
   }
-  #input1 {
-    margin-top: 10px;
-    margin-right: 5px;
-  }
-  #middle {
-    margin-left: 8px;
-  }
-  #bottomDistance {
-    margin-top: 80px;
-  }
-  #categories {
-    display: inline;
-  }
-  #dietaryPref {
-    display: inline;
-  }
-  #price {
-    display: inline;
-  }
-  .level-right {
-    margin-top: 20px;
-  }
-}
 
-@media only screen and (max-width: 500px) {
-  #searchFoods {
-    margin-left: 5px;
-    margin-top: 10px;
-  }
   #input1 {
     margin-top: 10px;
-    margin-right: 5px;
+    margin-right: 20px;
   }
   #middle {
     margin-left: 8px;
