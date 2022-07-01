@@ -1,0 +1,62 @@
+#container1 {
+  height: 400px;
+}
+
+#input1 {
+  width: 500px;
+}
+#searchFoods {
+  padding-right: 30px;
+}
+#headerTitle {
+  padding-left: 20px;
+  padding-top: 5px;
+}
+#options {
+  margin-right: 80px;
+  font-size: 25px;
+}
+
+#middle {
+  margin-top: 100px;
+}
+#categories {
+  margin-right: 5px;
+  font-size: 25px;
+}
+#dietaryPref {
+  margin-right: 5px;
+  font-size: 25px;
+}
+
+#price {
+  margin-right: 5px;
+  font-size: 25px;
+}
+#btnPrice1 {
+  margin-right: 10px;
+}
+#btnPrice2 {
+  margin-right: 10px;
+}
+#distance {
+  font-size: 25px;
+  padding-right: 5px;
+}
+#bottomDistance {
+  margin-top: 150px;
+}
+
+#btnMile1 {
+  margin-right: 5px;
+}
+
+#btnMile2 {
+  margin-right: 5px;
+}
+
+#section1 {
+  background-color: #f8b9ef;
+  color: white;
+  text-shadow: 1px 1px black;
+}
