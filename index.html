@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- Link to CSS and other styling libraries -->
     <link rel="stylesheet" href="/assets/style.css">
+    
+    <!--Bulma Framwork link for styling the page-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fooder</title>
 </head>
@@ -13,37 +16,34 @@
 
     <header>
         <!-- Main header section  -->
-        <div class="fooder-header">
-            <p>Fooder: Your Palate Advisor</p>
+        <nav id="nav1" class="navbar has-shadow is-active ">  
+        <div class="navbar-start">
+            <a id="headerTitle" href="" class="title is-size-4-mobile">Fooder: Your Palate Advisor</a>
         </div>
         
         <!-- Hamburger section showing about us and contact us links -->
-        <div class="hamburger-menu">
-            <div class="about-us">
-                <p>About Us</p>
-            </div>
-
-            <div class="contact-us">
-                <p>Contact Us</p>
-            </div>
+        <div id="options" class="navbar-end is-active">
+            <a href="#" class="navbar-item is-size-6-mobile">About us</a>
+            <a href="#" class="navbar-item is-size-6-mobile">Contact us</a>
         </div>
+        </nav>
     </header>
 
     <!-- Search section including filters other functionalities that help user search -->
-    <section>
-        <div class="search-section">
-            <div class="search-line">
-                <p>Search</p>
-                <p> Search Food</p>
+    <section class="" id="section1">
+        <div class="container" id="container1">
+            <div class="level-item" >
+                <h1 id="searchFoods" class="title has-text-left is-size-5-mobile ">Search Foods</h1>
                 <!-- Form to type in search bar begings-->
-                    <input type="search-bar">
+                <input id="input1" class="input" type="text" placeholder="Enter Food">
                 <!-- Form to type in search bar ends-->
             </div>
     
-            <div class="categories">
-                    <p>Categories</p>
+            <div id="middle" class="level">
+                <div class="level-left">
+                    <p id="categories">Categories</p>
                     <!-- List of cuisine types starts -->
-                    <select name="cuisine-type" id="">
+                    <select name="cuisine-type" id="selectCategories">
                         <Option value="African">African</Option>
                         <Option value="American">American</Option>
                         <Option value="Asian">Asian</Option>
@@ -53,27 +53,37 @@
                     <!-- List of cuisine types ends  -->
             </div>
     
-            <div class="dietary-preferences">
-                <p>Dietary Preferences</p>
-                <select name="dietary-preferences" id="">
+            <div class="level-right">
+                
+                <p id="dietaryPref">Dietary Preferences</p>
+                <select  name="dietary-preferences" id="selectDietary">
                     <Option value="Halal">Halal</Option>
                     <Option value="Kosher">Kosher</Option>
                     <Option value="Vegan">Vegan</Option>
                     <Option value="Vegatarian">Vegetarian</Option>
+                </select> 
+                     
             </div>
     
 
             <!-- CHECK ISSUE: appearance of following buttons -->
-            <div class="price-filter">    
-                <button type="button" id="price">$</button>
-                <button type="price-button">$$</button>    
-                <button type="price-button">$$$</button>    
+            <div class="level-right">    
+                <p id="price">Price</p>
+               <button id="btnPrice1" class="button is-small is-primary is-hovered">$</button>
+               <button id="btnPrice2" class="button is-small is-primary is-hovered ">$$</button>
+               <button  id="btnPrice3"class="button is-small is-primary is-hovered ">$$$</button>
+  
             </div>
-            <div class="distance-filter">
-                <p>Distance</p>
-                <button type="price-button">Under 1 mile</button>
-                <button type="price-button">3 miles</button>    
-                <button type="price-button">5 miles</button>    
+
+        </div>
+            <div id="bottomDistance" class="level">
+                <div id="distanceCon" class="level-item">
+                <p id="distance" >Distance</p>
+                <button id="btnMile1" type="button" class="button is-small is-danger">Under 1 mile</button>
+                <button id="btnMile2" type="price-button" class="button is-small is-danger">3 miles</button>    
+                <button id="btnMile3" type="price-button" class="button is-small is-danger">5 miles</button>
+            </div>
+                </div>    
             </div>
             <!-- CHECK ISSUE ENDS: appearance of following buttons -->
 
@@ -81,10 +91,55 @@
         <!-- Search section ends here. Results below -->
 
         <!-- Search results appear below the search area -->
-    <section>
-        <div class="results">
+    <section id="section2">
+        <div id="container2" class="container">
+            <div class="container results">
+                <h1 id="foodSearchTitle" class="title is-4 has-text-centered">Food search Name...</h1>
+                <div id="containerResults1" class="container result">
+                <h1 id="rest1" class="title is-6 has-text-centered">The Halal Guys</h1>
+                 <h1 id="address1" class="title is-6">Adress...</h1>
+                     <a id="googleLink1" href="" class="element">Click here to take to googles full search result</a>
+                   <h1 id="review1" class="title is-6">Small review</h1>
+                </div>
+            </div>
+            <div class="container results">
+                <div id="containerResults2" class="container result">
+                <h1 id="rest2" class="title is-6 has-text-centered">The Halal Guys</h1>
+                 <h1 id="address2" class="title is-6">Adress...</h1>
+                     <a id="googleLink2" href="" class="element">Click here to take to googles full search result</a>
+                   <h1 id="review2" class="title is-6">Small review</h1>
+                </div>
+            </div>
+            <div class="container results">
+                <div id="containerResults3" class="container result">
+                <h1 id="rest3" class="title is-6 has-text-centered">The Halal Guys</h1>
+                 <h1 id="address3" class="title is-6">Adress...</h1>
+                     <a id="googleLink3" href="" class="element">Click here to take to googles full search result</a>
+                   <h1 id="review3" class="title is-6">Small review</h1>
+                </div>
+            </div>
+            <div class="container results">
+                <div id="containerResults4" class="container result">
+                <h1 id="rest4" class="title is-6 has-text-centered">The Halal Guys</h1>
+                 <h1 id="address4" class="title is-6">Adress...</h1>
+                     <a id="googleLink4" href="" class="element">Click here to take to googles full search result</a>
+                   <h1 id="review4" class="title is-6">Small review</h1>
+                </div>
+            </div>
+            <div class="container results">
+                <div id="containerResults5" class="container result">
+                <h1 id="rest5" class="title is-6 has-text-centered">The Halal Guys</h1>
+                 <h1 id="address5" class="title is-6">Adress...</h1>
+                     <a id="googleLink5" href="" class="element">Click here to take to googles full search result</a>
+                   <h1 id="review5" class="title is-6">Small review</h1>
+                </div>
+            </div>
         </div>
+
+
+
     </section>
+   
         <!-- results section ends here  -->
 
         <!-- Footer section here -->
