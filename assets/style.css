@@ -9,6 +9,7 @@
 #searchFoods {
   padding-right: 30px;
   margin-top: 20px;
+  color: white;
 }
 #headerTitle {
   padding-left: 20px;
@@ -173,6 +174,9 @@
   text-shadow: 1px 1px black;
   height: 600px;
   width: 100%;
+  background-image: url("/images/Great_take_out.jpeg");
+  background-position: center;
+  background-size: cover;
 }
 
 #section2 {
