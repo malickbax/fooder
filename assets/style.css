@@ -9,10 +9,12 @@
 #searchFoods {
   padding-right: 30px;
   margin-top: 20px;
+  color: white;
 }
 #headerTitle {
   padding-left: 20px;
   padding-top: 5px;
+  text-align: center;
 }
 #options {
   margin-right: 80px;
@@ -31,10 +33,6 @@
   font-size: 25px;
 }
 
-#price {
-  margin-right: 5px;
-  font-size: 25px;
-}
 #btnPrice1 {
   margin-right: 10px;
 }
@@ -177,6 +175,9 @@
   text-shadow: 1px 1px black;
   height: 600px;
   width: 100%;
+  background-image: url("/images/Great_take_out.jpeg");
+  background-position: center;
+  background-size: cover;
 }
 
 #section2 {
