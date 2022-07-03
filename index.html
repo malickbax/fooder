@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- Link to CSS and other styling libraries -->
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
     
     <!--Bulma Framwork link for styling the page-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
@@ -35,7 +35,11 @@
             <div class="level-item" >
                 <h1 id="searchFoods" class="title has-text-left is-size-5-mobile ">Search Foods</h1>
                 <!-- Form to type in search bar begings-->
+                <form id="user-form">
                 <input id="input1" class="input" type="text" placeholder="Enter Food">
+                <button type ="submit" id="search-button" class="button is-white">Submit</button>
+                </form>
+
                 <!-- Form to type in search bar ends-->
             </div>
     
@@ -148,7 +152,7 @@
     </footer>
 
     <!-- Link to JS file and other script files -->
-    <script src="/assets/script.js"></script>
+    <script src="./assets/script.js"></script>
     
 </body>
 

@@ -49,6 +49,10 @@
   margin-top: 150px;
 }
 
+#SearchButton {
+  margin-right:10px;
+}
+
 #btnMile1 {
   margin-right: 5px;
 }
