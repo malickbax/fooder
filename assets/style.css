@@ -100,6 +100,11 @@
   margin-left: 10px;
 }
 
+#search-button {
+  margin: 0 50%;
+  margin-top: 35px;
+}
+
 #containerResults2 {
   position: relative;
   border: solid black 2px;
