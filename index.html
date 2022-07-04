@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- Link to CSS and other styling libraries -->
-    <link rel="stylesheet" href="/assets/style.css">
-
-    <link rel="icon" href="/assets/images/1486505264-food-fork-kitchen-knife-meanns-restaurant_81404.png">
+ <link rel="stylesheet" href="/assets/style.css">    
     <!--Bulma Framwork link for styling the page-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,8 +16,8 @@
     <header>
         <!-- Main header section  -->
         <nav id="nav1" class="navbar has-shadow is-active ">  
-        <div class="navbar-start">
-            <a id="headerTitle" href="" class="title is-size-4-mobile">Fooder: Your Palate Advisor</a>
+        <div class="navbar-middle">
+            <a id="headerTitle" href="" class="title is-size-4-mobile has-text-centered">Fooder: Your Palate Advisor</a>
         </div>
         
         <!-- Hamburger section showing about us and contact us links -->
@@ -33,7 +31,11 @@
             <div class="level-item" >
                 <h1 id="searchFoods" class="title has-text-left is-size-5-mobile ">Search Foods</h1>
                 <!-- Form to type in search bar begings-->
+                <form id="user-form">
                 <input id="input1" class="input" type="text" placeholder="Enter Food">
+                <button type ="submit" id="search-button" class="button is-white">Submit</button>
+                </form>
+
                 <!-- Form to type in search bar ends-->
 
  
@@ -41,6 +43,25 @@
           
                     <!-- List of cuisine types ends  -->
             </div>
+<<<<<<< HEAD
+=======
+    
+            <div class="level-right">
+                
+                <p id="dietaryPref">Dietary Preferences</p>
+                <select  name="dietary-preferences" id="selectDietary">
+                    <Option value="Halal">Halal</Option>
+                    <Option value="Kosher">Kosher</Option>
+                    <Option value="Vegan">Vegan</Option>
+                    <Option value="Vegatarian">Vegetarian</Option>
+                </select> 
+                     
+            </div>
+    
+
+            <!-- CHECK ISSUE: appearance of following buttons -->
+        
+>>>>>>> 478a5d3bd01e7561e2e60125367ea83d520f9188
 
              <div id="bottomDistance" class="level">
                 <div id="distanceCon" class="level-item">
@@ -115,11 +136,18 @@
 
         <!-- Footer section here -->
     <footer>
+        <footer class="footer">
+            <div class="content has-text-centered">
+              <p>
+                <strong>Fooder Food Advisor</strong> by <a href="https://jgthms.com">Fooder Team</a>
+              </p>
+            </div>
+          </footer>
 
     </footer>
 
     <!-- Link to JS file and other script files -->
-    <script src="/assets/script.js"></script>
+    <script src="./assets/script.js"></script>
     
 </body>
 
