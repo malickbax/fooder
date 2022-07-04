@@ -11,13 +11,13 @@ var userFormEl = document.querySelector("#user-form");
  var formSubmitHandler = function(event) {
    event.preventDefault();
    // get value from input element
-   var distanceCon = document.querySelector ("#distanceCon");
-   var mB1 = document.createElement("button")
-   mB1.className = "button is-small is-light";
-   mB1.type = "button";
-   mB1.id= "btnMile1";
-   mB1.textContent = "Under 1 mile";
-    distanceCon.appendChild (mB1);
+ //  var distanceCon = document.querySelector ("#distanceCon");
+//    var mB1 = document.createElement("button")
+//    mB1.className = "button is-small is-light";
+//    mB1.type = "button";
+//    mB1.id= "btnMile1";
+//    mB1.textContent = "Under 1 mile";
+//     distanceCon.appendChild (mB1);
 //    <button id="btnMile1" type="button" class="button is-small is-light">Under 1 mile</button>
 //                 <button id="btnMile2" type="price-button" class="button is-small is-light">3 miles</button>    
 //                 <button id="btnMile3" type="price-button" class="button is-small is-light">5 miles</button>
@@ -88,7 +88,24 @@ var findSearch = function(input1) {
     //repoContainerEl.textContent = "No repositories found.";
     return;
   }
+
+//   <h1 id="foodSearchTitle" class="title is-4 has-text-centered">Food search Name...</h1>
+//   <div id="containerResults1" class="container result">
+//   <h1 id="rest1" class="title is-6 has-text-centered">The Halal Guys</h1>
+//    <h1 id="address1" class="title is-6">Adress...</h1>
+//        <a id="googleLink1" href="" class="element">Click here to take to googles full search result</a>
+//      <h1 id="review1" class="title is-6">Small review</h1>
   
+
+  //  var distanceCon = document.querySelector ("#distanceCon");
+//    var mB1 = document.createElement("button")
+//    mB1.className = "button is-small is-light";
+//    mB1.type = "button";
+//    mB1.id= "btnMile1";
+//    mB1.textContent = "Under 1 mile";
+//     distanceCon.appendChild (mB1);
+
+
   // loop over results
   console.log (query)
   console.log (results.data)
@@ -99,13 +116,24 @@ var findSearch = function(input1) {
     var resultsCityName = results.data[i].address_obj.city;
     var resultsPostalCode = results.data[i].address_obj.postalcode;
     //console.log (results.data[i])
-    console.log (resultsName)
-    console.log (resultsCityName)
-    console.log (resultsPostalCode)
+
+    console.log (resultsName);
+    console.log (resultsCityName);
+    console.log (resultsPostalCode);
+    var resultsTitleContainer = document.querySelector ("#containerResults");
+    var resultsTitle = document.createElement("h1");
+    resultsTitle.className = "title is-4 has-text-centered";
+    resultsTitle.id = "foodSearchTitle"
+    resultsTitle.textContent = resultsName + " " + resultsCityName + " " + resultsPostalCode;
+    resultsTitleContainer.append (resultsTitle);
+
+
+
     //console.log ("Hello")
   }
 }
 userFormEl.addEventListener("submit", formSubmitHandler);
+
         const nameButton1 = document.getElementById("btnMile1");
         const nameButton2 = document.getElementById("btnMile2");
         const nameButton3 = document.getElementById("btnMile3");
