@@ -22,7 +22,7 @@ var userFormEl = document.querySelector("#user-form");
 //                 <button id="btnMile2" type="price-button" class="button is-small is-light">3 miles</button>    
 //                 <button id="btnMile3" type="price-button" class="button is-small is-light">5 miles</button>
     input1 = nameInputEl.value.trim();
-  validateinput();
+ // validateinput();
   if (validateinput() === true) {
     findSearch(input1);
     console.log ("hello");
@@ -56,7 +56,7 @@ console.log (latLong);
 const options = {method: 'GET', headers: {Accept: 'application/json'}};
 var findSearch = function(input1) {
     // format the Tripasvisor api url
-    var apiUrl = "https://cors-anywhere.herokuapp.com/"+"https://api.content.tripadvisor.com/api/v1/location/search?searchQuery=" +input1+ "&language=en&key=E90622A0EE3D4595BC63F7155C76C764";
+    var apiUrl = "https://cors-anywhere.herokuapp.com/"+"https://api.content.tripadvisor.com/api/v1/location/search?searchQuery=" +input1+ "&latLong="+latLong+ "&count=50"+"&language=en&key=E90622A0EE3D4595BC63F7155C76C764";
   
     // make a request to the url
     fetch(apiUrl, options)
@@ -110,11 +110,16 @@ var findSearch = function(input1) {
   console.log (query)
   console.log (results.data)
   console.log (results.data.length)
+  var resultsTitleContainer = document.querySelector ("#containerResults");
+  resultsTitleContainer.textContent = "";
   for (var i = 0; i < results.data.length; i++) {
     // format repo name
     var resultsName = results.data[i].name;
     var resultsCityName = results.data[i].address_obj.city;
     var resultsPostalCode = results.data[i].address_obj.postalcode;
+    var resultsStreet1 = results.data[i].address_obj.street1;
+    var resultsState = results.data[i].address_obj.state;
+    var resultsDistance = results.data[i].address_obj.distance;
     //console.log (results.data[i])
 
     console.log (resultsName);
@@ -122,9 +127,9 @@ var findSearch = function(input1) {
     console.log (resultsPostalCode);
     var resultsTitleContainer = document.querySelector ("#containerResults");
     var resultsTitle = document.createElement("h1");
-    resultsTitle.className = "title is-4 has-text-centered";
+    resultsTitle.className = "title is-6 has-text-centered";
     resultsTitle.id = "foodSearchTitle"
-    resultsTitle.textContent = resultsName + " " + resultsCityName + " " + resultsPostalCode;
+    resultsTitle.textContent = resultsName + " " + resultsStreet1 +" "+ resultsCityName + " " + resultsState + " " + resultsPostalCode;
     resultsTitleContainer.append (resultsTitle);
 
 
@@ -141,22 +146,22 @@ userFormEl.addEventListener("submit", formSubmitHandler);
         
         nameButton1.addEventListener("click", (e) => {
             mButton1 = 1;
-            console.log (mButton1);
-            console.log (input1);
             if (validateinput() === true) {
-                filterResults (input1, mButton1);
-                console.log ("called filterResults");
-                
+                filterResults (input1, mButton1);  
             }
             
         }, { capture: false });
         nameButton2.addEventListener("click", (e) => {
             mButton1 = 3;
-            console.log (mButton1);
+            if (validateinput() === true) {
+              filterResults (input1, mButton1);  
+          }
         }, { capture: false });
         nameButton3.addEventListener("click", (e) => {
             mButton1 = 5;
-            console.log (mButton1);
+            if (validateinput() === true) {
+              filterResults (input1, mButton1);  
+          }
         }, { capture: false });
         function filterResults (query, distance){
             // format the Tripasvisor api url
