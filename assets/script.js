@@ -89,6 +89,7 @@ var findSearch = function(input1) {
   
   
   // Diplay results
+
   var displayResults = function(results, query) {
     // check if api returned any results
   if (results.length === 0) {
@@ -120,12 +121,29 @@ var findSearch = function(input1) {
     
     //create html element
     var resultsTitle = document.createElement("h1");
+    var containerforResults = document.createElement ("div");
+
+    //set class
+
+    containerforResults.id = "containerResults1";
+
+
    //set class, ID and text for the html element
     resultsTitle.className = "title is-6 has-text-centered";
     resultsTitle.id = "foodSearchTitle"
     resultsTitle.textContent = resultsName + " " + resultsStreet1 +" "+ resultsCityName + " " + resultsState + " " + resultsPostalCode;
     
     //append each html element to the div
+   // resultsTitleContainer.append (containerforResults);
+   resultsTitle.style.margin = "0 33%";
+   resultsTitle.style.paddingTop = "10px";
+   resultsTitle.style.marginBottom ="10px";
+   resultsTitle.style.border = "solid 2px white";
+   resultsTitle.style.padding = "25px";
+   resultsTitle.style.width = "500px";
+   resultsTitle.style.textAlign ="center";
+   resultsTitle.style.borderRadius ="25px";
+
     resultsTitleContainer.append (resultsTitle);
   }
 }
