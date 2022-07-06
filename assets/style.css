@@ -1,8 +1,24 @@
 #container1 {
   height: 400px;
 }
+.hero-body {
+  background-color: black;
+}
+
+footer p {
+  font-size: 25px;
+}
+
+form {
+  display: inline;
+}
+
+.level {
+  margin: 0 25%;
+}
+
 #input1 {
-  width: 500px;
+  width: 580px;
   margin-top: 20px;
 }
 #searchFoods {
@@ -157,10 +173,10 @@
   color: white;
 }
 #section1 {
-  background-color: #F8B9EF;
+  background-color: #f8b9ef;
   color: white;
   text-shadow: 1px 1px black;
-  height: 600px;
+  height: 450px;
   width: 100%;
   background-image: url("../assets/images/Great_take_out.jpeg");
   background-position: center;
@@ -172,7 +188,7 @@
 }
 @media only screen and (max-width: 500px) {
   #section1 {
-    background-color: #F8B9EF;
+    background-color: #f8b9ef;
     color: white;
     text-shadow: 1px 1px black;
     height: 600px;
