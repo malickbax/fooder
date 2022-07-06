@@ -13,6 +13,10 @@ form {
   display: inline;
 }
 
+.level-item {
+  margin-top: 150px;
+}
+
 .level {
   margin: 0 25%;
 }
