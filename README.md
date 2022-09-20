@@ -1,7 +1,7 @@
 #Fooder Web Application
 
 ## Description
-- A web application that allows users to conveniently find restauarants and based on their food dietary preferences and location.
+- A web application that allows users to conveniently find restaurants based on their food dietary preferences and location.
 # Deployed Website Link
 - Deployed application URL: https://malickbax.github.io/fooder/
 ## GitHub repository link
